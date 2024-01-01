@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0046)http://kaisokuhenro.com/hako/manual/manual.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+
+<meta name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 10.0.0.0 for Windows">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>「箱庭遍路」島作りマニュアル</title>
+<style type="text/css">
+<!--
+TD{
+  font-size : 11pt;
+}
+-->
+</style>
+</head>
+<body background="./「箱庭遍路」島作りマニュアル_files/hrbg.jpg" link="#0000ff" vlink="#0000ff" alink="#ff0000">
+<center>
+<table border="0" width="600" bgcolor="#ffffff">
+  <tbody>
+    <tr>
+      <td><a href="http://kaisokuhenro.com/hako/hako-main.php"><img src="./「箱庭遍路」島作りマニュアル_files/hakohen.gif" width="150" height="24" border="0" align="left"></a>　<font color="#0000ff"><b><font size="+1">　　島作りマニュアル</font></b></font></td>
+    </tr>
+    <tr>
+      <td align="center">随時更新、時々チェックしましょう。</td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffff"><b><font size="+1" color="#0000ff">ゲームの目的</font></b></td>
+    </tr>
+    <tr>
+      <td><img src="./「箱庭遍路」島作りマニュアル_files/map1.gif" width="100" height="100" border="0" align="left">　12マス×12マスの領域内で与えられた「<b>島</b>」に、<b>札所</b>や<b>門前町</b>などの施設を整備し、島を訪れる「<b>お遍路さん</b>」の数を増やしていきます。島の開発に必要な「<b>浄財</b>」と、お遍路さんを集めるための「<b>功徳</b>」の増減をバランスよく管理し、天災や怪獣来襲などの困難も乗り越えながら、自分だけの「<b>島四国</b>」を作り上げていきます。ゲームの<b>１ターンは６時間</b>で、予約された<b>計画</b>を１ターンに１つずつ実行します。島からお遍路さんが１人もいなくなったり、島を７日間（２８ターン）計画なしで放置するとゲームオーバーです。</td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffff"><b><font size="+1" color="#0000ff">とりあえず参加しよう！</font></b></td>
+    </tr>
+    <tr>
+      <td>「箱庭遍路」トップページ上端の「島の登録・設定変更」をクリックして、案内に従い「島」を登録すると、登録した島が「発見」されます。自分の島を開発するときは、トップページの「自分の島へ」で島を選択しパスワードを入力して開発画面に入ります。<font color="#ff0000">登録した直後の島は「２５ターン放置」と同等に扱われ、４ターン（１日）以内に何らかの計画を実行しないと放棄されます。開発当初には</font><font color="#ff0000"><b>必ず札所を建てて下さい</b></font><font color="#ff0000">。札所がないと功徳がすぐに０となり、お遍路さんがいなくなります。</font>他の島の様子を見たいときは、「諸島の状況」にある島の名前をクリックして「観光」できます。観光画面では、開発計画に関わるいくつかのデータや施設が伏せられて表示されています。なお、現在の箱庭諸島に登録できる島の数は最大２０までに設定しています。２０島に達すると、これ以上新しい島を登録できなくなりますので、どの島か「放棄」されるまでお待ち下さい。<br>
+      ※<font color="#ff0000">島は「１人１つまで」！</font>２つ目発覚の場合、管理者権限で削除します。</td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffff"><b><font size="+1" color="#0000ff">島のデータ</font></b></td>
+    </tr>
+    <tr>
+      <td>「箱庭遍路」トップページでは、各島の現在の状況を一覧表示しています。また、各島への観光画面、開発画面でも、その島の状況を表示します。
+      <hr>
+      <font color="#0000ff"><b>順位</b></font>　箱庭諸島でお遍路さんの多い順位です。<br>
+      <font color="#0000ff"><b>お遍路さん</b></font>　島を巡拝中のお遍路さんの数です。いなくなると島も滅びます。<br>
+      <font color="#0000ff"><b>面積</b></font>　島の面積です。陸地１マスあたり１平方ｋｍです。<br>
+      <font color="#0000ff"><b>浄財</b></font>　島の開発計画を実行するための資金（単位：萬縁　最大９９９９萬縁）です。<br>
+      <font color="#0000ff"><b>功徳</b></font>（くどく）　お遍路さんと浄財を集めるために必要（単位：南無　最大９９９９９南無）です。<br>
+      　功徳が０になるとお遍路さんが去っていきます。功徳を求めてやってくるお遍路さんが多い<br>
+      　ほど、功徳の消費も速くなります。<br>
+      <font color="#0000ff"><b>札所規模</b></font>　島内の札所が集められるお遍路さんの目安です。札所規模が<font color="#ff0000">赤字</font>で表示<br>
+      　されている間は、島の功徳が減り続けます。赤字解消のために札所増強が必要です。<br>
+      <font color="#0000ff"><b>門前町規模</b></font>　島内の門前町が集められるお遍路さんの目安です。<br>
+      <font color="#0000ff"><b>温泉規模</b></font>　島内の温泉が集められるお遍路さんの目安です。
+      <hr>
+      ※札所、門前町、温泉の規模の合計が、その島に迎えられるお遍路さんの目安となります。規模合計に余裕のあるうちは、お遍路さんの増加に応じて、島の浄財・功徳の収益がよくなりますが、規模合計を超えた場合、抱えきれないお遍路さんは浄財・功徳の増加に関与しません。規模合計を大きく上回るお遍路さんがいる場合、お遍路さんが殺到、混乱した施設が壊滅することがあります。</td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffff"><b><font size="+1" color="#0000ff">地形、施設など</font></b></td>
+    </tr>
+    <tr>
+      <td>
+      <table border="1" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land3.gif" width="32" height="32" border="0"></td>
+            <td rowspan="2">お遍路さん<br>
+            （遍路道）</td>
+            <td rowspan="3">アイコンは上から１～２９人、３０～９９人、１００人（自然増の上限）、<br>
+            １０１～２００人（布教活動で増加、先達さん付きで整列）<br>
+            島から１人もいなくなるとゲームオーバーです。平地にも発生します。<br>
+            １００人未満の遍路道は１００人になるまで毎ターン増え続けます。<br>
+            お遍路さんの人数×０．２の功徳を毎ターン消費します。<br>
+            布教活動をしたターンに大量増加することがあります。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land4.gif" width="32" height="32" border="0"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><img src="./「箱庭遍路」島作りマニュアル_files/land5.gif" width="32" height="32" border="0"><img src="./「箱庭遍路」島作りマニュアル_files/lands6.gif" width="32" height="32" border="0"></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/tera1.gif" width="32" height="32" border="0"></td>
+            <td>札所</td>
+            <td rowspan="5">札所整備を続けることで規模が増加し、功徳の増加につながります。<br>
+            最初に建てた札所は１００人規模で、その札所に札所整備１回ずつ<br>
+            重ねるごとに２０～７０人規模が増えます。島の功徳が多いほど、<br>
+            重ね整備の増分が大きくなります。２００人規模に達すると「別格本山」<br>
+            に、３００人規模で「総本山」に、４００人規模で「大聖堂」に成長し、<br>
+            ５００人規模（最大）で「大師殿堂」となります。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/tera2.gif" width="32" height="32" border="0"></td>
+            <td>別格本山</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/tera3.gif" width="32" height="32" border="0"></td>
+            <td>総本山</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/tera4.gif" width="32" height="32" border="0"></td>
+            <td>大聖堂</td>
+          </tr>
+          <tr>
+            <td align="center" height="32"><img src="./「箱庭遍路」島作りマニュアル_files/tera5.gif" width="32" height="32" border="0"></td>
+            <td>大師殿堂</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/mon1.gif" width="32" height="32" border="0"></td>
+            <td>門前町</td>
+            <td rowspan="2">門前町整備を続けることで規模が増加し、浄財の増加につながります。<br>
+            最初は３００人、重ね整備は備蓄浄財に応じて１００～２００人増えます。<br>
+            最初は「屋台」ですが、５００人規模で「土産物街」に昇格し、７００人<br>
+            規模でアーケードが付き、１０００人規模で最大となります。</td>
+          </tr>
+          <tr>
+            <td colspan="2"><img src="./「箱庭遍路」島作りマニュアル_files/mon2.gif" width="32" height="32" border="0"><img src="./「箱庭遍路」島作りマニュアル_files/mon3.gif" width="32" height="32" border="0"></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land15.gif" width="32" height="32" border="0"></td>
+            <td>温泉</td>
+            <td rowspan="3">山にしか開発できませんが、温泉整備を続けることで規模が増加し、<br>
+            浄財の増加につながります。３００人規模に達すると「道後系温泉」に、<br>
+            １０００人規模で「超道後温泉」に昇格し、２０００人で最大となります。<br>
+            当初、重ね整備ともに、浄財と功徳の量に応じて５０～１５０人増えます。<br>
+            ミサイルやほとんどの災害に耐え、恒常的な財源として期待できます。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/spa2.gif" width="32" height="32" border="0"></td>
+            <td>道後系温泉</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/spa3.gif" width="32" height="32" border="0"></td>
+            <td>超道後温泉</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/udon.gif" width="32" height="32" border="0"></td>
+            <td>うどん店</td>
+            <td>島の人口に比例した浄財収入を得られますが、時々うどんの「お接待」<br>
+            が行われ、人口に比例した功徳を消費します。一定確率で閉店します。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/zen.gif" width="32" height="32" border="0"></td>
+            <td>善根宿</td>
+            <td>お遍路さんのための接待宿・休憩所ですが、収入支出、その他ゲーム<br>
+            進行に何ら影響はありません。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land6.gif" width="32" height="32" border="0"></td>
+            <td>高野まき</td>
+            <td>この島の特産の木です。売却して浄財に換えられます。毎ターン少し<br>
+            ずつ増えます。平地または既にある林に植林しても増やせます。<br>
+            火災や台風から隣接施設を守る効果もあるようです。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land1.gif" width="32" height="32" border="0"></td>
+            <td>荒地</td>
+            <td>このままでは何も建てられない、役に立たない土地です。<br>
+            整地して平地にします。掘削すると浅瀬になります。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land2.gif" width="32" height="32" border="0"></td>
+            <td>平地</td>
+            <td>施設建設や植林が可能です。お遍路さんが発生することがあります。<br>
+            掘削すると浅瀬になります。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land11.gif" width="32" height="32" border="0"></td>
+            <td>山</td>
+            <td>温泉を整備することができます。掘削すると荒地になります。<br>
+            山は作ることができません。噴火するのを待ちましょう（爆）</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land0.gif" width="32" height="32" border="0"></td>
+            <td>海</td>
+            <td rowspan="2">埋め立てると浅瀬になります。海底基地を建設できます。掘削すると<br>
+            予算に応じた確率で「海洋深層水」が見つかります。<br>
+            ←まれにうずしお、フェリー、補陀洛船が発生しますが、<br>
+            　海と同等に扱われゲーム進行に何ら影響はありません。</td>
+          </tr>
+          <tr>
+            <td colspan="2"><img src="./「箱庭遍路」島作りマニュアル_files/umi0.gif" width="32" height="32" border="0"><img src="./「箱庭遍路」島作りマニュアル_files/ferry1.gif" width="32" height="32" border="0"><img src="./「箱庭遍路」島作りマニュアル_files/ferry2.gif" width="32" height="32" border="0"></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land14.gif" width="32" height="32" border="0"></td>
+            <td>浅瀬</td>
+            <td rowspan="2">埋め立てると荒地になります。掘削すると海になります。<br>
+            「がんばっていきまっしょい」の女子ボート部と思われる<br>
+            練習風景を目にすることもありますが、浅瀬と同等に扱われ<br>
+            ゲーム進行に何ら影響はありません。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/shoi0.gif" width="32" height="32" border="0"></td>
+            <td>ボート部<br>
+            練習中</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land9.gif" width="32" height="32" border="0"></td>
+            <td>ミサイル<br>
+            基地</td>
+            <td>怪獣を倒すためのミサイルを発射します。実戦の経験値が増すと<br>
+            基地のレベルが上がり、レベルの数だけミサイルが撃てます。<br>
+            観光客には、高野まきの林に見えます。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land10.gif" width="32" height="32" border="0"></td>
+            <td>防衛施設</td>
+            <td>ミサイルを打ち込まれたときに一定範囲の被弾を防ぎますが、防衛施設<br>
+            自身は守れません。また、防衛施設に達した怪獣を自爆で吹っ飛ばし<br>
+            ます。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/water.gif" width="32" height="32" border="0"></td>
+            <td>海洋深層水</td>
+            <td>海を掘削して見つかることがあります。一定の浄財収入を得られますが、<br>
+            毎ターン一定の確率で枯渇します。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land12.gif" width="32" height="32" border="0"></td>
+            <td>海底基地</td>
+            <td>建設に莫大な費用がかかります。観光客には海にしか見えません。<br>
+            ほとんどの災害に耐えます。</td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/land13.gif" width="32" height="32" border="0"></td>
+            <td>着弾跡</td>
+            <td>ミサイルが落ちた跡です。荒地と同様に扱います。</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="./「箱庭遍路」島作りマニュアル_files/umaoni.gif" width="32" height="32" border="0"><br>
+            <img src="./「箱庭遍路」島作りマニュアル_files/inu.gif" width="32" height="32" border="0"></td>
+            <td>怪獣</td>
+            <td>お遍路さんの数が増えすぎると（千人以上？）出現します。島内の施設を<br>
+            ことごとく壊していきます。お遍路さんが多いほど強い怪獣が出てきます。<br>
+            ミサイルで攻撃、隣に防衛施設を建てて自爆、掘削で島から切り離して<br>
+            隔離、災害で消し飛ぶのを待つなど、いくつかの対策が考えられます。</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="./「箱庭遍路」島作りマニュアル_files/daishi.gif" width="32" height="32" border="0"></td>
+            <td>特殊<br>
+            建造物</td>
+            <td>島の象徴となる様々な特殊アイテムを用意しています。</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffff"><b><font size="+1" color="#0000ff">計画コマンドについて</font></b></td>
+    </tr>
+    <tr>
+      <td>開発画面では、以下の<b>コマンドを登録</b>して開発計画を実行します。コマンドは<b>２０個まで</b><br>
+      <b>予約</b>でき、毎日３時、９時、１５時、２１時に各島の計画が番号順に<b>１つずつ実行</b>されます。<br>
+      資金・浄財不足や計画の対象がなくなるなど、実行不可能になったコマンドは<b>中止</b>され、<br>
+      次に予約されたコマンドを繰り上げて実行します。地ならしや寄付行為など、<b>ターンを消費<br>
+      しないコマンド</b>は続けて実行され、ターンを消費するコマンドまで１ターンで実行します。<br>
+      <br>
+      <b><font color="#009900" size="+1">＜開発系コマンド＞</font></b>
+      <table border="1" width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td><font color="#0000ff"><b>整地</b></font>（５萬縁）<br>
+      　荒地、ミサイル被弾跡を整地して施設を建てるための<b>平地</b>を確保します。施設を整地すると<br>
+      　平地になります。つまり施設を壊して他の施設を作るには２ターン必要です。<br>
+      <font color="#0000ff"><b>地ならし</b></font>（１００萬縁）<br>
+      　<b>ターンを消費せずに整地</b>できます。ただし強引に地ならしするため、地ならししたターンの<br>
+      　<b>地震発生率が高くなります</b>。<br>
+      <font color="#0000ff"><b>埋め立て</b></font>（１５０萬縁）<br>
+      　<b>海</b>、<b>浅瀬</b>を埋め立て陸地を作り、島の<b>面積</b>を増やします。<b>陸地に隣接したマス</b>しか実行<br>
+      　できません。海を埋め立てると浅瀬に、浅瀬を埋め立てると荒地になります。しかし平地・<br>
+      　荒地を埋め立てても山にはなりません。面積の大きくなりすぎた島は、「<b>地盤沈下</b>」の<br>
+      　危険が増します。<b>陸地に多く面した浅瀬</b>を埋め立てると、周辺の海に土が流れて浅瀬に<br>
+      　なり、<b>次の埋め立てが楽に</b>なることもあります。<br>
+      <font color="#0000ff"><b>掘削</b></font>（２００萬縁）<br>
+      　埋め立てとは逆に陸地や浅瀬を<b>掘り下げ</b>ます。山を掘削すると荒地に、荒地、平地を掘削<br>
+      　すると浅瀬に、浅瀬を掘削すると海になります。海を掘削すると、<b>海洋深層水</b>が見つかる<br>
+      　こともあります。「<b>数量</b>」に０または１を入れると２０％の確率で見つかり、数量４まで２０％<br>
+      　ずつ確率が上がり、<b>数量５</b>（＝<b>１０００萬縁</b>）の予算をつぎ込むと<b>必ず見つかります</b>。<br>
+      　数量６以上でも見つかるので、<b>５で十分</b>です。海洋深層水が見つかると毎ターン<b>１００萬縁</b><br>
+      　の収益が上がりますが、毎ターン４％の確率で<b>枯渇</b>します。<br>
+      <font color="#0000ff"><b>高野まき売却</b></font>（無料）<br>
+      　島に生えている特産の「<b>高野まき</b>」を<b>売って浄財</b>を得ます。<b>１０本５萬縁</b>で売れます。<br>
+      　伐採跡は<b>平地</b>に戻り、「<b>植林</b>」しない限り生えてきません。また、<b>火災</b>、<b>台風</b>、<b>津波</b>から<br>
+      　守ってくれたりもしますので、計画的に植林・売却しましょう。
+      </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <b><font color="#009900" size="+1">＜建設系コマンド＞</font></b>
+      <table border="1" width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td><font color="#0000ff"><b>札所整備</b></font>（２０萬縁）<br>
+      　平地に<b>札所</b>を建てます。既に札所があるマスに整備を実行すると、<b>札所規模</b>が増します。<br>
+      　札所の規模に応じて<b>功徳が増加</b>します。平地に初めて建てると<b>１００人</b>規模の札所と<br>
+      　なり、既存の札所に札所整備を<b>重ねる</b>と１回ごとに<b>２０人ずつ増加</b><font color="#ff0000">※</font>します。<br>
+      　<font color="#ff0000">※島の功徳の量に応じて、最大＋７０人まで成果が上がることもあります。</font><br>
+      <font color="#0000ff"><b>門前町整備</b></font>（１００萬縁）<br>
+      　平地に<b>門前町</b>を建てます。既に門前町があるマスに整備を実行すると、<b>門前町規模</b>が<br>
+      　増します。門前町の規模に応じて<b>浄財</b>が入ります。整備当初の門前町は<b>３００人</b>規模で、<br>
+      　門前町整備１回ごとに<b>１００人ずつ増加</b><font color="#ff0000">※</font>します。<br>
+      　<font color="#ff0000">※島の浄財の量に応じて、最大＋２００人まで成果が上がることもあります。</font><br>
+      <font color="#0000ff"><b>温泉整備</b></font>（１５０萬縁）<br>
+      　山から<b>温泉</b>を掘り当てて整備します。山以外からは温泉は湧きません。既に温泉がある<br>
+      　山に整備を実行すると、<b>温泉規模</b>が増します。温泉の規模に応じて<b>浄財</b>が入ります。<br>
+      　整備当初、次回以降ともに<b>５０人ずつ増加</b><font color="#ff0000">※</font>します。<br>
+      　<font color="#ff0000">※島の浄財と功徳の量に応じて、最大＋１５０人まで成果が上がることもあります。</font>
+            <hr>
+            <font color="#0000ff"><b>うどん店建設</b></font>（１００萬縁）<br>
+      　平地に<b>うどん店</b>を建てます。上記３施設と違って「<b>規模</b>」<b>という概念がなく</b>、<b>島の人口に</b><br>
+      　<b>比例して</b>（<b>１００人あたり５萬縁</b>）<b>浄財</b>収入を得られます。毎ターン<b>３０％</b>の確率で<br>
+      　「<b>お接待</b>」が行われ、<b>１００人あたり１０南無の功徳を消費</b>します。なお、毎ターン<b>５％</b>の<br>
+      　確率で<b>閉店</b>し、島に複数のうどん店が競合する場合は閉店しやすくなるようです。<br>
+      　人口の多い島では、うどん店１つで門前町数個分の収益を上げることがありますが、<br>
+            　お接待も大量です。閉店もあるため、門前町、温泉もある程度は必要です。<br>
+            <font color="#0000ff"><b>高野まき植林</b></font>（５０萬縁）<br>
+      　平地に高野まきを<b>植林</b>します。既に高野まきが生えているマスに植林すると木の本数が<br>
+      　増えます。植林直後は２０本ですが、毎ターン１０本ずつ増えます。伐採時のレートが<b>１０本</b><br>
+      　<b>５萬縁</b>なので、１００本以上にならないと（植林後８ターン＝２日以上経過）元が取れません。<br>
+      　<b>最大２０００本</b>まで増えたところで売ると<b>１０００萬縁</b>になります。
+            <hr>
+            <font color="#0000ff"><b>ミサイル基地建設</b></font>（３００萬縁）<br>
+      　島を襲う<b>怪獣</b>を撃退するなど、ミサイル攻撃に必要な施設を建設します。実戦の<b>経験値</b><br>
+      　を重ねると、基地の<b>レベル</b>が上がります。<br>
+      <font color="#0000ff"><b>防衛施設整備</b></font>（８００萬縁）<br>
+      　ミサイルを打ち込まれたときに、防衛施設から<b>２マス以内</b>の<b>被弾を防ぎ</b>ますが、<br>
+      　<b>防衛施設自身は守れません</b>。また、防衛施設に達した怪獣を<b>自爆</b>で吹っ飛ばします。<br>
+      <font color="#0000ff"><b>海底基地建設</b></font>（８０００萬縁）<br>
+            　海にミサイル基地を建設するため、非常に高いです。
+            <hr>
+            <font color="#0000ff"><b>特殊建造物建設</b></font>（１０００萬縁）<br>
+      　五重塔、大師像、大仏など様々な<b>特殊建造物</b>を建てますが、これらはあくまでも「<b>象徴</b>」<br>
+      　で、特に役には立ちません（笑） あえて挙げるとすれば、高野まきと同様の<b>防災効果</b>、<br>
+      　<b>怪獣の進行を食い止める</b>くらいでしょう。<font color="#ff0000">特殊建造物の上に特殊建造物を建てると、<br>
+      　元の建造物が任意の島に撃ち込まれ大被害が出ます</font>ので、<font color="#ff0000"><b>絶対にやらないで下さい！</b></font><br>
+      <font color="#0000ff"><b>善根宿設置</b></font>（８８萬縁）<br>
+      　ゲーム進行に影響ありませんが、遍路の「お接待」文化を伝承すべく、島の象徴として<br>
+      　建てるとよいでしょう。
+      </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <b><font color="#009900" size="+1">＜攻撃系コマンド＞</font></b><br>
+      <table border="1" width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td><font color="#ff0000">※<b>他の島への攻撃禁止</b>（怪獣撃退の要請があった場合を除く）</font>
+      <br>
+            <font color="#0000ff"><b>ＰＰミサイル発射</b></font>（５０萬縁×<b>数量</b>、<b>目標</b>入力）<br>
+            　<b>ピンポイントミサイル</b>を発射します。目標地点から１マス以内に着弾。<br>
+            　<b>命中率は約３７％</b>のようです<br>
+            ※１ターンで撃てるミサイルの数は、島の基地の数と同じですが、<br>
+            　レベルの上がった基地は、そのレベルの数だけ撃てます。<br>
+            <font color="#ff0000">※箱庭遍路では、ＰＰミサイル以外の使用<b>自粛</b>をお願いしております。</font><br>
+            <font color="#999999"><s><b>ミサイル発射</b>（２０萬縁×数量、目標入力）　目標の島、マスに向かってミサイルを発射<br>
+            します。精度は目標地点から２マス以内と、なかなか命中しません。（あまり使われない）。</s><br>
+            <s><b>ＳＴミサイル発射</b>（５０萬縁×数量、目標入力）　ステルスミサイルを発射します。誰が<br>
+            撃ったかバレません。精度は２マス以内。</s><br>
+            <s>怪獣派遣（３０００萬縁、目標入力）　目標の島に怪獣を派遣します。</s></font><font color="#ff0000">（自分の島以外禁止）</font>
+      </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <b><font color="#009900" size="+1">＜運営系コマンド＞</font></b>
+      <table border="1" width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td><font color="#0000ff"><b>功徳の授与（換金）</b></font>（１００南無×<b>数量</b>）<br>
+            　貯めた<b>功徳を浄財に換えて</b>開発資金を得ます。<b>換金レートは０．１</b><br>
+            　（<b>１００南無→１０萬縁</b>）となります。<b>逆</b>（お金で功徳を得る）<b>はできません</b>。<br>
+            <font color="#0000ff"><b>賽銭箱回収</b></font>（無料）<br>
+            　<b>放置コマンド</b>です。何もコマンドがないターンは、<b>賽銭箱</b>を回収してまわります。功徳が<br>
+            　多いほど賽銭が多くなります。浄財が尽きたときにコツコツ貯める戦法として使えますが、<br>
+            　<b>２８ターン</b>（７日間）他のコマンドを行わず放置すると、島自体<b>放棄</b>されゲームオーバー。<br>
+            <font color="#0000ff"><b>浄財の寄付</b></font>（１００萬縁×<b>数量</b>、<b>目標</b>入力）<br>
+            　他の島に<b>資金援助</b>します。見返りはありません。<br>
+            <font color="#0000ff"><b>功徳の接待（無償）</b></font>（１００南無×<b>数量</b>、<b>目標</b>入力）<br>
+            　他の島に<b>功徳を施し</b>ます。見返りはありません。<br>
+            <font color="#0000ff"><b>布教活動</b></font>（１０００萬縁）<br>
+            　<b>お遍路さんが通常以上に増えます</b>。遍路道は通常１マス１００人で<b>自然増上限</b>となり<br>
+            　ますが、布教活動により最大<b>２００人</b>まで増やすことができます（伸び率は鈍るらしい）。<br>
+            　成長中の遍路道は１～３０人、成長の止まった遍路道は１～１０人、ランダムで増えます。<br>
+            <font color="#0000ff"><b>島の放棄</b></font>（無料）　島を放棄してゲームをやめます。</td>
+          </tr>
+        </tbody>
+      </table>
+      　</td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffff"><b><font size="+1" color="#0000ff">災害、怪獣、特殊建造物</font></b></td>
+    </tr>
+    <tr>
+      <td><b>地震</b>　島内の施設を壊滅させます。地ならし実行後に地震が起こりやすくなります。<br>
+      <b>津波</b>　島の沿岸部に被害が出ます。<br>
+      <b>台風</b>　上陸すると被害が出ます。<br>
+      <b>隕石</b>　着弾点が海になり、隣接マスの施設が壊滅します。隕石が落ちた場合、次のターンの隕石発生確率が上がる「確率変動」で、隕石の連チャンもあるようです。<br>
+      <b>巨大隕石</b>　着弾点が海、隣接マスが浅瀬になり、着弾点から２マス先まで壊滅します。<br>
+      <b>噴火</b>　海底火山が噴火し、中心部に山ができ、隣接マスも壊滅します。<br>
+      <b>火災</b>　島内施設が焼け落ちます。高野まきの林か特殊建造物で延焼を防ぎます。<br>
+      <b>埋蔵金</b>　災害ではありませんが、整地中に浄財が発掘されることもあります。<br>
+      <b>地盤沈下</b>　島の面積が９０平方ｋｍを超えると、一定確率で沿岸が沈下して浅瀬になります。<br>
+      <hr>
+      <b>怪獣</b>については特集「<a href="http://kaisokuhenro.com/hako/manual/monster.html">怪獣ぎゃふん大作戦</a>」をご覧下さい。
+      <hr>
+      <b>特殊建造物</b>（座標、数量指定）<br>
+      <table border="1" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="2" align="center" bgcolor="#dddddd"><b>0</b></td>
+            <td colspan="2" align="center" bgcolor="#bbbbbb"><b>1</b></td>
+            <td colspan="2" align="center" bgcolor="#dddddd"><b>2</b></td>
+            <td colspan="2" align="center" bgcolor="#bbbbbb"><b>3</b></td>
+            <td colspan="2" align="center" bgcolor="#dddddd"><b>4</b></td>
+            <td colspan="2" align="center" bgcolor="#bbbbbb"><b>5</b></td>
+            <td colspan="2" align="center" bgcolor="#dddddd"><b>6</b></td>
+            <td colspan="2" align="center" bgcolor="#bbbbbb"><b>7</b></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/daishi.gif" width="32" height="32" border="0"></td>
+            <td>弘法<br>
+            大師像</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/goju.gif" width="32" height="32" border="0"></td>
+            <td>五重<br>
+            塔</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/daito.gif" width="32" height="32" border="0"></td>
+            <td>根本<br>
+            大塔</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/daibutsu.gif" width="32" height="32" border="0"></td>
+            <td>大仏</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/jonofuchi.gif" width="32" height="32" border="0"></td>
+            <td>杖の<br>
+            淵</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/iwaya.gif" width="32" height="32" border="0"></td>
+            <td>逼割<br>
+            禅定</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/zenigata.gif" width="32" height="32" border="0"></td>
+            <td>銭形<br>
+            砂絵</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/taki.gif" width="32" height="32" border="0"></td>
+            <td>滝</td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center" bgcolor="#bbbbbb"><b>8</b></td>
+            <td colspan="2" align="center" bgcolor="#dddddd"><b>9</b></td>
+            <td colspan="2" align="center" bgcolor="#bbbbbb"><b>10</b></td>
+            <td colspan="2" align="center" bgcolor="#dddddd"><b>11</b></td>
+            <td colspan="2" align="center" bgcolor="#bbbbbb"><b>12</b></td>
+            <td colspan="2" align="center" bgcolor="#dddddd"><b>13</b></td>
+            <td colspan="2" align="center" bgcolor="#bbbbbb"><b>14</b></td>
+            <td colspan="2" align="center" bgcolor="#dddddd"><b>15</b></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/fudo.gif" width="32" height="32" border="0"></td>
+            <td>不動<br>
+            明王像</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/furo.gif" width="32" height="32" border="0"></td>
+            <td>不老<br>
+            松</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/hellywood.gif" width="32" height="32" border="0"></td>
+            <td>ヘリ<br>
+            ウッド</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/ashi.gif" width="32" height="32" border="0"></td>
+            <td>仏足<br>
+            石</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/bin.gif" width="32" height="32" border="0"></td>
+            <td>びんず<br>
+            る尊者</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/sakura.gif" width="32" height="32" border="0"></td>
+            <td>桜</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/momiji.gif" width="32" height="32" border="0"></td>
+            <td>紅葉</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/daimon.gif" width="32" height="32" border="0"></td>
+            <td>大門</td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>16</b></td>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>17</b></td>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>18</b></td>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>19</b></td>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>20</b></td>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>21</b></td>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>22</b></td>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>23</b></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/yugi.gif" width="32" height="32" border="0"></td>
+            <td>ユギ塔</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/kusu.gif" width="32" height="32" border="0"></td>
+            <td>楠</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/icho.gif" width="32" height="32" border="0"></td>
+            <td>銀杏</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/sake.gif" width="32" height="32" border="0"></td>
+            <td>般若<br>
+            塔</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/yu.gif" width="32" height="32" border="0"></td>
+            <td>郵便<br>
+            歩趣塔</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/daimonji.gif" width="32" height="32" border="0"></td>
+            <td>大文<br>
+            字山</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/light.gif" width="32" height="32" border="0"></td>
+            <td>灯台</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/meoto.gif" width="32" height="32" border="0"></td>
+            <td>夫婦<br>
+            岩</td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>24</b></td>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>25</b></td>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>26</b></td>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>27</b></td>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>28</b></td>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>29</b></td>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>30</b></td>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>31</b></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/miyajima.gif" width="32" height="32" border="0"></td>
+            <td>宮島</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/ama.gif" width="32" height="32" border="0"></td>
+            <td>天橋<br>
+            立</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/matsu.gif" width="32" height="32" border="0"></td>
+            <td>松島</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/beer.gif" width="32" height="32" border="0"></td>
+            <td>麦般<br>
+            若塔</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/wine.gif" width="32" height="32" border="0"></td>
+            <td>菩如霊<br>
+            縫坊</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/fuji.gif" width="32" height="32" border="0"></td>
+            <td>富士<br>
+            山</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/shiro.gif" width="32" height="32" border="0"></td>
+            <td>城</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/pyra.gif" width="32" height="32" border="0"></td>
+            <td>毘羅<br>
+            密堂</td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>32</b></td>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>33</b></td>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>34</b></td>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>35</b></td>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>36</b></td>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>37</b></td>
+            <td colspan="2" bgcolor="#dddddd" align="center"><b>38</b></td>
+            <td colspan="2" bgcolor="#bbbbbb" align="center"><b>39</b></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/bo.gif" width="32" height="32" border="0"></td>
+            <td>浄祈<br>
+            喜観舎</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/den.gif" width="32" height="32" border="0"></td>
+            <td>王萬<br>
+            殿舎</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/ml.gif" width="32" height="32" border="0"></td>
+            <td>摩輪<br>
+            雷那</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/np.gif" width="32" height="32" border="0"></td>
+            <td>南無<br>
+            風号</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/kofun.gif" width="32" height="32" border="0"></td>
+            <td>善法<br>
+            光縁墳</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/7fuku.gif" width="32" height="32" border="0"></td>
+            <td>七福<br>
+            神</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/6kaku.gif" width="32" height="32" border="0"></td>
+            <td>六角<br>
+            堂</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/jo.gif" width="32" height="32" border="0"></td>
+            <td>杖杉<br>
+            庵</td>
+          </tr>
+          <tr bgcolor="#999999">
+            <td colspan="2" align="center"><b>40</b></td>
+            <td colspan="2" align="center" bgcolor="#cccccc"><b>41</b></td>
+            <td colspan="2" align="center"><b>42</b></td>
+            <td colspan="2" align="center" bgcolor="#cccccc"><b>43</b></td>
+            <td colspan="2" align="center"><b>44</b></td>
+            <td colspan="2" align="center" bgcolor="#cccccc"><b>45</b></td>
+            <td colspan="2" align="center"><b>46</b></td>
+            <td colspan="2" align="center" bgcolor="#cccccc"><b>47</b></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/toyo.gif" width="32" height="32" border="0"></td>
+            <td>十夜<br>
+            ヶ橋</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/saba.gif" width="32" height="32" border="0"></td>
+            <td>鯖<br>
+            大師</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/taiko.gif" width="32" height="32" border="0"></td>
+            <td>太鼓<br>
+            台</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/ryoma.gif" width="32" height="32" border="0"></td>
+            <td>桂浜</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/hari.gif" width="32" height="32" border="0"></td>
+            <td>はりま<br>
+            や橋</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/gt.gif" width="32" height="32" border="0"></td>
+            <td>黄金<br>
+            塔</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/golf.gif" width="32" height="32" border="0"></td>
+            <td>悟流<br>
+            布場</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/ben.gif" width="32" height="32" border="0"></td>
+            <td>弁天<br>
+            池</td>
+          </tr>
+          <tr bgcolor="#cccccc">
+            <td colspan="2" align="center"><b>48</b></td>
+            <td colspan="2" bgcolor="#999999" align="center"><b>49</b></td>
+            <td colspan="2" align="center"><b>50</b></td>
+            <td colspan="2" bgcolor="#999999" align="center"><b>51</b></td>
+            <td colspan="2" align="center"><b>52</b></td>
+            <td colspan="2" bgcolor="#999999" align="center"><b>53</b></td>
+            <td colspan="2" align="center"><b>54</b></td>
+            <td colspan="2" bgcolor="#999999" align="center"><b>55</b></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/tairyu.gif" width="32" height="32" border="0"></td>
+            <td>舎心<br>
+            ヶ嶽</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/shakki.gif" width="32" height="32" border="0"></td>
+            <td>赤亀</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/gon.gif" width="32" height="32" border="0"></td>
+            <td>鐘楼</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/sp.gif" width="32" height="32" border="0"></td>
+            <td>讃宝<br>
+            都</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/awa.gif" width="32" height="32" border="0"></td>
+            <td>阿波<br>
+            踊り</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/40010.gif" width="32" height="32" border="0"></td>
+            <td>沈下<br>
+            橋</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/uma.gif" width="32" height="32" border="0"></td>
+            <td>お供<br>
+            馬</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/ritsu.gif" width="32" height="32" border="0"></td>
+            <td>栗林<br>
+            公園</td>
+          </tr>
+          <tr bgcolor="#cccccc">
+            <td colspan="2" bgcolor="#999999" align="center"><b>56</b></td>
+            <td colspan="2" align="center"><b>57</b></td>
+            <td colspan="2" bgcolor="#999999" align="center"><b>58</b></td>
+            <td colspan="2" align="center"><b>59</b></td>
+            <td colspan="2" bgcolor="#999999" align="center"><b>60</b></td>
+            <td colspan="2" align="center"><b>61</b></td>
+            <td colspan="2" bgcolor="#999999" align="center"><b>62</b></td>
+            <td colspan="2" align="center"><b>63</b></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/ghouse.gif" width="32" height="32" border="0"></td>
+            <td>独逸<br>
+            館</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/goro.gif" width="32" height="32" border="0"></td>
+            <td>ゴロ<br>
+            ゴロ</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/zuka.gif" width="32" height="32" border="0"></td>
+            <td>犬塚<br>
+            池</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/73oku.gif" width="32" height="32" border="0"></td>
+            <td>我拝<br>
+            師山</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/taj.gif" width="32" height="32" border="0"></td>
+            <td>印度<br>
+            宮殿</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/alock.gif" width="32" height="32" border="0"></td>
+            <td>虚空<br>
+            岩</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/toro.gif" width="32" height="32" border="0"></td>
+            <td>高<br>
+            灯籠</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/goma.gif" width="32" height="32" border="0"></td>
+            <td>柴燈<br>
+            護摩</td>
+          </tr>
+          <tr bgcolor="#cccccc">
+            <td colspan="2" align="center"><b>64</b></td>
+            <td colspan="2" bgcolor="#999999" align="center"><b>65</b></td>
+            <td colspan="2" align="center"><b>66</b></td>
+            <td colspan="2" bgcolor="#999999" align="center"><b>67</b></td>
+            <td colspan="2" align="center"><b>68</b></td>
+            <td colspan="2" bgcolor="#999999" align="center"><b>69</b></td>
+            <td colspan="2" align="center"><b>70</b></td>
+            <td colspan="2" bgcolor="#999999" align="center"><b>71</b></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/goko.gif" width="32" height="32" border="0"></td>
+            <td>五鈷<br>
+            杵</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/suzu.gif" width="32" height="32" border="0"></td>
+            <td>持鈴</td>
+            <td align="right">涅槃<br>
+            如来</td>
+            <td align="center" colspan="2"><img src="./「箱庭遍路」島作りマニュアル_files/nehan1.gif" width="32" height="32" border="0"><img src="./「箱庭遍路」島作りマニュアル_files/nehan2.gif" width="32" height="32" border="0"></td>
+            <td align="left">釈迦<br>
+            上下</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/omatsu.gif" width="32" height="32" border="0"></td>
+            <td>お松<br>
+            権現</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/nora.gif" width="32" height="32" border="0"></td>
+            <td>野良<br>
+            時計</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/hoshi.gif" width="32" height="32" border="0"></td>
+            <td>星ガ<br>
+            森</td>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/iino.gif" width="32" height="32" border="0"></td>
+            <td>讃岐<br>
+            富士</td>
+          </tr>
+          <tr bgcolor="#cccccc">
+            <td colspan="2" bgcolor="#999999" align="center"><b>72</b></td>
+            <td colspan="2" align="center"></td>
+            <td colspan="2" bgcolor="#999999" align="center"></td>
+            <td colspan="2" align="center"></td>
+            <td colspan="2" bgcolor="#999999" align="center"></td>
+            <td colspan="2" align="center"></td>
+            <td colspan="2" bgcolor="#999999" align="center"></td>
+            <td colspan="2" align="center"></td>
+          </tr>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/jingu.gif" width="32" height="32" border="0"></td>
+            <td>神宮</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <b><font color="#ff0000">「数量」入力欄に、対応する数字を入れる</font></b>のをお忘れなく！<br>
+      例：建設予定の平地の座標を指定、数量に「３」を入れて登録すると大仏が建立される。 <br>
+      　数量入力を省略、または７３以上を入力すると、自動的に０（弘法大師像）となります。<br>
+      　札所・霊跡・尊像の形をした特殊建造物も「札所」としてはカウントされません。</td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffff"><b><font size="+1" color="#0000ff">表彰関係</font></b></td>
+    </tr>
+    <tr>
+      <td>箱庭遍路では島四国運営に顕著な功績のあった島に対する<b>表彰</b>も用意しています。<br>
+      下記の賞を受賞すると、箱庭遍路トップページの島一覧にも受賞履歴が表示されます。
+      <table border="1" width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td><img src="./「箱庭遍路」島作りマニュアル_files/prize0.gif" width="16" height="16" border="0"><b>ターン杯</b>　１００ターンごとの節目で一番お遍路さんが多い島が受賞します。<br>
+      <img src="./「箱庭遍路」島作りマニュアル_files/prize1.gif" width="16" height="16" border="0"><b>銀札賞</b>　お遍路さんが２４００人以上になると受賞。<br>
+      <img src="./「箱庭遍路」島作りマニュアル_files/prize2.gif" width="16" height="16" border="0"><b>金札賞</b>　お遍路さんが４９００人以上になると受賞。<br>
+      <img src="./「箱庭遍路」島作りマニュアル_files/prize3.gif" width="16" height="16" border="0"><b>錦札賞</b>　お遍路さんが９９００人以上になると受賞。<br>
+            　　「<a href="http://kaisokuhenro.com/hako/manual/dendo.html">箱庭の殿堂</a>」　錦札賞を達成した島の画像を記念に残します。<br>
+      <img src="./「箱庭遍路」島作りマニュアル_files/prize7.gif" width="16" height="16" border="0"><b>災難賞</b>　１ターンに５００人以上お遍路さんが減ると受賞。<br>
+      <img src="./「箱庭遍路」島作りマニュアル_files/prize8.gif" width="16" height="16" border="0"><b>超災難賞</b>　　１ターンに１０００人以上お遍路さんが減ると受賞。<br>
+      <img src="./「箱庭遍路」島作りマニュアル_files/prize9.gif" width="16" height="16" border="0"><b>究極災難賞</b>　　１ターンに２０００人以上お遍路さんが減ると受賞。</td>
+          </tr>
+        </tbody>
+      </table>
+      　</td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffff"><font color="#0000ff"><b>※箱庭遍路のゲームにおいても、掲示板同様のマナーを守ってお楽しみ下さい。<br>
+      　マナー違反の島、観光者には、不本意ですが、お帰り頂きます。</b></font></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+
+</body></html>
